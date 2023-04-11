@@ -1,8 +1,16 @@
-//Proyecto que permite evaluar IMC y Presión de la persona
+/**
+ * Proyecto que permite evaluar IMC y Presión de la persona 
+ * @author Emanuel
+ *  
+ */
 package cl.emanuelsandez;
 
 import java.util.Scanner;
-
+/**
+ * 
+ *  
+ *
+ */
 public class evaluarSalud {
 
 	static Scanner sc = new Scanner(System.in); //Variable de clase
@@ -45,7 +53,9 @@ public class evaluarSalud {
 
 	
 	}
-	
+	/**
+	 * 
+	 */
 	static void imc () {
 		System.out.println("Cálculo IMC");
 		System.out.println("Ingrese su peso");
@@ -85,9 +95,9 @@ public class evaluarSalud {
 		
 		if(valor1<=120 && valor2<=80) {
 			System.out.println("Presión arterial óptima.");
-		}else if (valor1>120&&valor1<130&&valor2>80&&valor2<85) {
+		}else if (valor1<=130&&valor2<=85) {
 			System.out.println("Presión arterial normal.");
-		}else if (valor1>=130&&valor1<139&&valor2>=85&&valor2<89) {
+		}else if (valor1<=139&&valor2<=89) {
 			System.out.println("Presión arterial normal alta.");
 		}else if (valor1>=140&&valor2>=90) {
 			System.out.println("Hipertensión arterial.");
@@ -96,9 +106,7 @@ public class evaluarSalud {
 		}
 	}
 	static void salir() {
-		
+		System.out.println("Saliendo......");
 	}
 	
 	}
-	
-

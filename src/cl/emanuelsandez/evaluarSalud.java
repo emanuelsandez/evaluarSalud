@@ -53,7 +53,7 @@ public class evaluarSalud {
 		System.out.println("Ingrese su altura");
 		float altura = sc.nextFloat();
 		float imc = (float)(peso/Math.pow(altura, 2));
-		System.out.printf("Su IMC es %.2f", imc);
+		System.out.printf("Su IMC es %.2f\n", imc);
 		evaluaImc(imc);
 		
 		}
@@ -85,9 +85,9 @@ public class evaluarSalud {
 		
 		if(valor1<=120 && valor2<=80) {
 			System.out.println("Presión arterial óptima.");
-		}else if (valor1>120&&valor1<130&&valor2>80&&valor2<85) {
+		}else if (valor1<=130&&valor2<=85) {
 			System.out.println("Presión arterial normal.");
-		}else if (valor1>=130&&valor1<139&&valor2>=85&&valor2<89) {
+		}else if (valor1<=139&&valor2<=89) {
 			System.out.println("Presión arterial normal alta.");
 		}else if (valor1>=140&&valor2>=90) {
 			System.out.println("Hipertensión arterial.");
@@ -96,7 +96,8 @@ public class evaluarSalud {
 		}
 	}
 	static void salir() {
-		
+	
+
 	}
 	
 	}

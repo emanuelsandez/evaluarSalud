@@ -63,8 +63,9 @@ public class evaluarSalud {
 		System.out.println("Ingrese su altura");
 		float altura = sc.nextFloat();
 		float imc = (float)(peso/Math.pow(altura, 2));
-		System.out.printf("Su IMC es %.2f", imc);
+		System.out.printf("Su IMC es %.2f/n", imc);
 		evaluaImc(imc);
+		
 		
 		}
 	static void evaluaImc(float valor) {
@@ -106,7 +107,7 @@ public class evaluarSalud {
 		}
 	}
 	static void salir() {
-		System.out.println("Saliendo......");
+		System.out.println("Saliendo....");
 	}
 	
 	}
